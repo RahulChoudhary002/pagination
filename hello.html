@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture and Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bfd250;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #006400;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #e39595;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .pagination .page-item .page-link {
+            color: #007bff;
+            border: 1px solid #007bff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+
+        .pagination .page-item .page-link:hover {
+            background-color: #0056b3;
+            color: white;
+            border-color: #0056b3;
+        }
+
+        .pagination .page-item .page-link:focus {
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .pagination {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>About Agriculture</h1>
+        <div class="content">
+            <img src="33.jpg" alt="Farm Landscape">
+            <p>
+                Agriculture is the backbone of human civilization and one of the most essential industries. It involves
+                cultivating soil, growing crops, and raising animals to produce food, fiber, and other products.
+                Agriculture has evolved significantly over centuries, from traditional methods to modern techniques,
+                which now include advanced machinery, biotechnology, and sustainable practices.
+            </p>
+            <p>
+                Globally, agriculture provides livelihoods for billions of people and is integral to the economy of many
+                nations. It not only ensures food security but also contributes to the production of raw materials for
+                industries, such as textiles and biofuels. The importance of agriculture extends beyond economics,
+                influencing cultural traditions and fostering connections between communities and nature.
+            </p>
+            <img src="7.jpg" alt="Farmers Working">
+            <p>
+                Sustainable agriculture practices are gaining prominence to address challenges like climate change, soil
+                degradation, and water scarcity. By adopting eco-friendly techniques, such as organic farming and crop
+                rotation, farmers can protect natural resources and ensure long-term productivity.
+            </p>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
